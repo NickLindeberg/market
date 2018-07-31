@@ -32,20 +32,10 @@ class Market
     end
   end
 
-  def total_inventory
-    item_list = @vendors.map do |vendor|
-
-      vendor.inventory
-    end
-    require "pry"; binding.pry
-    # item_list.inject({}) do |hash, item|
-    #   hash[item.keys] = item.value
-    #   hash
-    # item_list.inject(Hash.new(0)) do |hash, item|
-    #   hash[item.item] += item.quantity
-    # end
-  end
-  # item_counts = matched_invoice_items.inject(Hash.new(0)) do |count, invoice_item|
-  #     count[invoice_item.item_id] += invoice_item.quantity
-  #     count
+  # def total_inventory
+  #   item_list = @vendors.map do |vendor|
+  #
+  #     vendor.inventory
+  #   end
+  # end
 end
